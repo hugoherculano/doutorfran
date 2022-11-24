@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #092240;
+  color: #ffffff;
+}
+
+.padrao-content {
+  max-width: 1200px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: solid 0.5px #234b7d;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.logo strong {
+  font-weight: 700;
+}
+
+.header-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.header-menu li {
+  text-transform: uppercase;
+  color: #7e8ba1;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.header-menu li a {
+  padding: 30px 0px;
+  display: block;
+  color: #7e8ba1;
+  transition: ease-in 0.3s;
+  border-bottom: solid 2px transparent;
+}
+
+.header-menu li a:hover {
+  color: #ffffff;
+  border-bottom: solid 2px #ffffff;
+}
+
+.zap {
+  font-size: 1rem;
+  display: block;
+  padding: 10px 25px;
+  color: #ffffff;
+  border: solid 1px #ffffff;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: ease-in 0.3s;
+}
+
+.zap:hover {
+  color: #092240;
+  background-color: #ffffff;
+}
+
+/* Main */
+
+.main {
+  padding: 30px;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.main h1 {
+  margin-top: 150px;
+}
+
+.main-lista {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main-lista a {
+  background-color: #194478;
+  color: #ffffff;
+  display: flex;
+  padding: 15px;
+  border-radius: 7px;
+  transition: ease-in 0.3s;
+}
+
+.main-lista a:hover {
+  background-color: #0a2c55;
+}
+
+.video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.video iframe {
+  border-radius: 7px;
+  width: 80%;
+  position: relative;
+  bottom: -150px;
+}
+
+/* Seção de vídeos */
+
+.secao-videos {
+  background-color: #081d36;
+  padding-bottom: 80px;
+}
+
+.secao-videos h2 {
+  padding-top: 250px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.secao-videos-lista {
+  margin-top: 60px;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.secao-videos-lista li {
+  border: solid 3px #0b2546;
+  border-radius: 7px;
+  transition: ease-in 0.1s;
+  flex: 1;
+  display: flex;
+}
+
+.secao-videos-lista li a {
+  color: #ffffff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.secao-videos-lista li:hover {
+  border: solid 3px #2a5a95;
+  transform: translate(0px, -5px);
+}
+
+.secao-videos-lista li h3 {
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.secao-videos-lista li h3 span {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.secao-videos-lista li p {
+  border-top: solid 3px #0b2546;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.secao-videos-lista li p ion-icon {
+  color: #2a5a95;
+  font-size: 2rem;
+}
+
+/* Sobre */
+
+.secao-sobre {
+  padding: 20px;
+  height: 100vh;
+  background-image: url("../img/doutor.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 45px;
+  background-position-x: 1050px;
+  background-size: 40%;
+}
